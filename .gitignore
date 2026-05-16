@@ -1,0 +1,9 @@
+#Stripe library
+vendor/
+
+#Composer configs
+composer.json
+composer.lock
+
+#Misc
+.DS_Store
