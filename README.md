@@ -3,4 +3,6 @@ Download the repository and place it in the ***htdocs*** folder under the name "
 
 Install Composer at *https://getcomposer.org/download/*
 
-Install the library for Stripe gateway: `$composer require stripe/stripe-php`
+Install the library for Stripe gateway with Composer: `$composer require stripe/stripe-php`
+
+It is recommended to use Apache in XAMPP to run this project on *localhost* .
