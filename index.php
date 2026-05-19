@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 // Include configuration file
 include_once "routes/PayPal/config.php";
 // Include hypothetical database
-include_once "data.php";
+include_once "db/data.php";
 ?>
 
 <!DOCTYPE html>

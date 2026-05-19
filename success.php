@@ -2,10 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-// Include hypothetical database
-include_once "data.php";
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

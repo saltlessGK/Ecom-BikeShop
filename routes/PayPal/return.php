@@ -3,12 +3,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 // Include configuration file
-include_once "routes/PayPal/config.php";
+include_once "config.php";
 // Include hypothetical database
-include_once "data.php";
-
-// If transaction data is available in the URL
-// how to get URL of the current page
+include_once "../../db/data.php";
 
 if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty($_GET['st'])) { 
 	// Get transaction information from URL  
@@ -28,16 +25,16 @@ if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty(
     <meta name="author" content="">
     <title>Payment Success</title>
     <!-- CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/ItemSlider/css/main-style.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
     <!-- JavaScript -->
-    <script defer src="assets/js/jquery-1.10.2.js"></script>
-    <script defer src="assets/js/bootstrap.js"></script>
-    <script defer src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-    <script defer src="assets/ItemSlider/js/jquery.catslider.js"></script>
+    <script defer src="../../assets/js/jquery-1.10.2.js"></script>
+    <script defer src="../../assets/js/bootstrap.js"></script>
+    <script defer src="../../assets/ItemSlider/js/modernizr.custom.63321.js"></script>
+    <script defer src="../../assets/ItemSlider/js/jquery.catslider.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -50,7 +47,7 @@ if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty(
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><strong>ALICE'S</strong> ELECTRONIC BIKE Shop</a>
+                <a class="navbar-brand" href="../../index.php"><strong>ALICE'S</strong> ELECTRONIC BIKE Shop</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,7 +55,7 @@ if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty(
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Track Order</a></li>
-                    <li><a href="cart.php">View Cart</a></li>
+                    <li><a href="../../cart.php">View Cart</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Signup</a></li>
 
@@ -105,7 +102,7 @@ if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty(
 	            	<h1 class="error">Payment Failed</h1>
 	        	<?php } ?>
 	    	</div>
-	    	<a href="index.php" class="btn-link">Back to Products</a>
+	    	<a href="../../index.php"><button class="btn btn-primary">Back to Home</button></a>
 		</div>
 	</div>
 </body>

@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 // Include configuration file
 include_once "routes/PayPal/config.php";
 // Include hypothetical database
-include_once "data.php";
+include_once "db/data.php";
 ?>
 
 <!DOCTYPE html>
@@ -259,6 +259,9 @@ include_once "data.php";
                     </div>
                     <form method="post" action="routes/Stripe/checkout.php" style="padding: 0; margin: 0;">
                         <input type="image" name="submit" src="assets/img/stripe-logo.jpg" style="margin: 10px; height: 50px; border-radius: 4px;">
+                    </form>
+                    <form method="post" action="routes/VNPay/checkout.php" style="padding: 0; margin: 0;">
+                        <input type="image" name="submit" src="assets/img/vnpay-logo.png" style="margin: 10px; height: 50px; border-radius: 4px;">
                     </form>
                 </div>
             </div>
