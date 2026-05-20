@@ -15,8 +15,8 @@ if (!isset($_SESSION['localRate'])) {
     }
 }
 $amount = $_SESSION['grandTotal'] * $_SESSION['localRate']; // Convert to VND for VNPay
-$roundedAmount = round($amount); // Round to nearest whole number and format with commas
-$_SESSION['amount'] = $roundedAmount; // Store the rounded amount in session to forward to VNPay API
+$roundedAmount = round($amount); // Round to nearest whole number
+$_SESSION['amount'] = $roundedAmount; // Store the rounded amount to forward to VNPay API
 ?>
 <!DOCTYPE html>
 <html lang="en">

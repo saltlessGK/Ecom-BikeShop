@@ -15,7 +15,7 @@ include_once "db/data.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Bootstrap E-Commerce Template</title>
+    <title>Alice Bike Shop - Main Page</title>
     <!-- CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -177,14 +177,12 @@ include_once "db/data.php";
                 <hr>
                 <p>
                     Swanston St, Melbourne,<br />
-                                    VIC 3000, Australia<br />
+                    VIC 3000, Australia<br />
                     Call: +61-000-000-000<br>
                     Email: info@alicebikeshop.com<br>
                 </p>
-
-                2020 www.alicebikeeshop.com | All Right Reserved
+                2020 www.alicebikeshop.com | All Right Reserved
             </div>
-        
         </div>
         <hr>
     </div>

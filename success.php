@@ -82,7 +82,7 @@ if (session_status() === PHP_SESSION_NONE) {
 	            <p><b>Paid Amount:</b> $<?php echo $_SESSION['grandTotal']; ?></p>
 	        	<?php unset($_SESSION['cart']); ?>
 	    	</div>
-	    	<a href="index.php" class="btn-link">Back to Products</a>
+	    	<a href="index.php"><button class="btn btn-primary">Back to Home</button></a>
 		</div>
 	</div>
 </body>

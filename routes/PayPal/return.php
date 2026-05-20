@@ -7,7 +7,7 @@ include_once "config.php";
 // Include hypothetical database
 include_once "../../db/data.php";
 
-if(!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty($_GET['st'])) { 
+if (!empty($_GET['tx']) && !empty($_GET['amt']) && !empty($_GET['cc']) && !empty($_GET['st'])) { 
 	// Get transaction information from URL  
 	$txn_id = $_GET['tx']; 
 	$payment_gross = $_GET['amt']; 

@@ -1,5 +1,5 @@
 <?php 
-//Page from paypal to verify buyer and seller
+// Page from PayPal to verify buyer and seller
 // Include configuration file 
 include_once 'config.php'; 
 
@@ -14,7 +14,7 @@ foreach ($raw_post_array as $keyval) {
   if (count($keyval) == 2)
     $myPost[$keyval[0]] = urldecode($keyval[1]);
 }
-// read the IPN message sent from PayPal and prepend 'cmd=_notify-validate'
+// Read the IPN message sent from PayPal and prepend 'cmd=_notify-validate'
 $req = 'cmd=_notify-validate';
 if (function_exists('get_magic_quotes_gpc')) {
   $get_magic_quotes_exists = true;

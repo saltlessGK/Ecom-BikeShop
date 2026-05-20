@@ -13,7 +13,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
  */
 require_once("./config.php");
 
-$vnp_TxnRef = rand(1,10000); //Transaction Reference Code
+$vnp_TxnRef = rand(1,10000); // Transaction ID
 $vnp_Amount = $_SESSION['amount']; // Paid amount
 $vnp_Locale = $_POST['language']; // Language for payment
 $vnp_BankCode = $_POST['bankCode']; // Payment method code
